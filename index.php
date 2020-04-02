@@ -1,6 +1,7 @@
 <?php
 	$day = date('l');
 	$date = date('j F Y');
+	$datetime= date('c');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,12 +11,6 @@
 	<title>what fucking day is it? it's <?=$day?></title>
 	<link rel="icon" type="image/svg+xml" href="favicon.svg">
 	<style>
-		@font-face {
-			font-family: system;
-			font-style: normal;
-			font-weight: 300;
-			src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
-		}
 		html {
 			line-height: 1.15;
 			-webkit-text-size-adjust: 100%;
@@ -24,7 +19,7 @@
 			color: #000;
 			background: #FF52AE;
 			margin: 0;
-			font-family: "system";
+			font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 			display: grid;
 			justify-content: center;
 			padding: 2em;
@@ -47,11 +42,12 @@
 		a:hover {
 			color: #99FF00;
 		}
+		time span { white-space: nowrap; }
 	</style>
 </head>
 <body>
 	<main role="main">
-		<h1>it's fucking <?=$day?>, <?=$date?></h1>
+		<h1>it's fucking <time datetime="<?=$datetime?>"><span><?=$day?></span>, <span><?=$date?></span></time></h1>
 		<p>it's ok. time is a fucking disintegrating construct these days.</p>
 	</main>
 	<footer>
