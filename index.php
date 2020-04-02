@@ -35,7 +35,7 @@
 		footer {
 			font-size: 1em;
 		}
-		a:link {
+		a {
 			color: #fff;
 			background-color: #7A0F95;
 			padding: .25em .5em;
