@@ -57,7 +57,7 @@
 	<footer>
 		<p>this site is made with zero javascript and does not track you.</p>
 		<p>if this made you chuckle and you're able, you can <a href="https://ko-fi.com/tattooeddev">buy me a cup of coffee</a>.</p>
-		<p><a href="http">view source</a></p>
+		<p><a href="https://github.com/vfalconi/whatfuckingdayisit.com">view source</a></p>
 	</footer>
 </body>
 </html>
